@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#questionpage {
+  width: 80%;
+  min-height: 80vh;
+  background-color: white;
+  margin: 120px auto;
+  box-shadow: 1px 2px 20px 2px rgb(163, 161, 161);
+  border-radius: 10px;
+  animation-name: up;
+  animation-duration: 2s;
+  text-align: center;
+  display: none;
+  position: relative;
+}
+#questionpage h1 {
+  padding-top: 25px;
+  color: rgb(201, 131, 3);
+  font-size: 40px;
+  animation-name: popDown;
+  animation-duration: 2s;
+  animation-delay: 2.3s;
+  animation-fill-mode: forwards;
+  font-weight: 1000;
+}
+#questionpage .border {
+  width: 90%;
+  border: thin solid rgba(138, 134, 134, 0.514);
+  border-radius: 10px;
+  margin: 10px auto;
+}
+#questionpage #border2 {
+  width: 90%;
+  border: thin solid rgba(201, 132, 3, 0.986);
+  border-radius: 10px;
+  margin: 35px auto;
+}
+#questionpage #border2 #ques {
+  margin: 20px;
+}
+#questionpage #border3 {
+  width: 90%;
+  height: 25vh;
+  border: thin solid rgb(201, 132, 3);
+  margin: -10px auto;
+  text-align: left;
+}
+#questionpage #border3 ul {
+  list-style-type: none;
+}
+#questionpage #border3 ul li {
+  margin: 15px;
+  font-size: 18px;
+  font-weight: 800;
+}
+#questionpage #border3 ul li input {
+  margin-right: 10px;
+}
+#questionpage .border4 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30%;
+  border: thin solid rgb(201, 132, 3);
+  margin: 20px auto;
+}
+#questionpage .border4 #Previous {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  background-color: rgb(201, 131, 3);
+  border: thin solid rgb(255, 0, 0);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 800;
+}
+#questionpage .border4 #next1 {
+  margin-top: 10px;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 8px 10PX;
+  font-weight: 800;
+  background-color: rgb(201, 131, 3);
+  border: thin solid rgb(255, 0, 0);
+  border-radius: 5px;
+}
+#questionpage .border5 {
+  width: 90%;
+  border: thin solid rgb(201, 132, 3);
+  margin: 20px auto;
+}
+#questionpage .border5 #sumbit {
+  margin-top: 10px;
+  color: rgb(201, 131, 3);
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 8px 15PX;
+  background-color: rgb(255, 255, 255);
+  border: thin solid rgb(201, 132, 3);
+  border-radius: 5px;
+  font-weight: 800;
+}
+#questionpage #timer {
+  border: thick solid rgba(201, 132, 3, 0.377);
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  border-radius: 50%;
+  top: 1vh;
+  left: 80%;
+  text-align: center;
+  align-items: center;
+}
+#questionpage #timer #counter {
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+#questionpage #modal {
+  width: 50%;
+  min-height: 20vh;
+  background-color: white;
+  top: 0;
+  left: 25%;
+  box-shadow: 1px 2px 20px 2px rgb(230, 189, 100);
+  border-radius: 10px;
+  animation-name: up;
+  animation-duration: 2s;
+  text-align: center;
+  display: none;
+  position: absolute;
+}
+#questionpage #modal h2 {
+  padding-top: 30px;
+  color: rgb(201, 131, 3);
+}
+#questionpage #modal div {
+  margin-top: 20px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+#questionpage #modal button {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 3px 12PX;
+  background-color: rgb(201, 131, 3);
+  border: none;
+  box-shadow: 1px 2px 20px 2px rgb(231, 195, 148);
+  border-radius: 4px;
+}
+
+#startQuiz {
+  width: 80%;
+  min-height: 70vh;
+  background-color: white;
+  margin: 120px auto;
+  box-shadow: 1px 2px 20px 2px rgb(163, 161, 161);
+  border-radius: 10px;
+  animation-name: up;
+  animation-duration: 2s;
+  text-align: center;
+}
+#startQuiz img {
+  width: 30%;
+  padding-top: 30px;
+}
+#startQuiz h4 {
+  font-size: 25px;
+  margin-top: -10px;
+  color: rgb(252, 172, 107);
+  text-shadow: 1px 2px 10px 2px rgb(17, 16, 16);
+}
+#startQuiz #start {
+  font-size: 100px;
+  color: rgb(201, 132, 3);
+  padding-top: 40px;
+  animation-name: popDown;
+  animation-duration: 2s;
+  animation-delay: 2.3s;
+  animation-fill-mode: both;
+  cursor: pointer;
+}
+
+#modal {
+  width: 40%;
+  min-height: 20vh;
+  background-color: white;
+  margin: 180px auto;
+  box-shadow: 1px 2px 20px 2px rgb(230, 189, 100);
+  border-radius: 10px;
+  animation-name: up;
+  animation-duration: 2s;
+  text-align: center;
+  display: none;
+  position: relative;
+}
+#modal h2 {
+  padding-top: 30px;
+  color: rgb(201, 131, 3);
+}
+#modal div {
+  margin-top: 20px;
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+}
+#modal button {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 3px 12PX;
+  background-color: rgb(201, 131, 3);
+  border: none;
+  box-shadow: 1px 2px 20px 2px rgb(231, 195, 148);
+  border-radius: 4px;
+}
+
+#printResult {
+  width: 50%;
+  min-height: 50vh;
+  background-color: white;
+  margin: 120px auto;
+  box-shadow: 1px 2px 20px 2px rgb(163, 161, 161);
+  border-radius: 10px;
+  animation-name: up;
+  animation-duration: 2s;
+  text-align: center;
+  display: none;
+}
+#printResult h2 {
+  padding-top: 25px;
+  color: rgb(201, 131, 3);
+  font-size: 40px;
+  animation-name: popDown;
+  animation-duration: 2s;
+  animation-delay: 2.3s;
+  animation-fill-mode: forwards;
+  font-weight: 1000;
+}
+#printResult #show1 {
+  padding-top: 23px;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+}
+#printResult button {
+  color: white;
+  font-size: 25px;
+  margin-top: 30px;
+  padding: 6px 12PX;
+  background-color: rgb(201, 131, 3);
+  border: none;
+  box-shadow: 1px 2px 20px 2px rgb(231, 195, 148);
+  border-radius: 4px;
+}
+
+@keyframes popDown {
+  from {
+    transform: translateY(-25px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes up {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media (max-width: 380px) {
+  #questionpage {
+    width: 90%;
+  }
+  #questionpage h1 {
+    padding-top: 25px;
+    color: rgb(201, 131, 3);
+    font-size: 30px;
+    animation-name: popDown;
+    animation-duration: 2s;
+    animation-delay: 2.3s;
+    animation-fill-mode: forwards;
+    font-weight: 1000;
+  }
+  #questionpage .border4 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    border: thin solid rgb(201, 132, 3);
+    margin: 20px auto;
+  }
+  #questionpage .border4 #Previous {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 7px;
+    background-color: rgb(201, 131, 3);
+    border: thin solid rgb(255, 0, 0);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  #questionpage .border4 #next1 {
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 5px 7PX;
+    font-weight: 600;
+    background-color: rgb(201, 131, 3);
+    border: thin solid rgb(255, 0, 0);
+    border-radius: 5px;
+  }
+}
+@media (max-width: 460px) {
+  #questionpage #timer {
+    border: thick solid rgba(201, 132, 3, 0.377);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    top: 2vh;
+    left: 80%;
+    text-align: center;
+    align-items: center;
+  }
+  #questionpage #timer #counter {
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  #questionpage #modal {
+    width: 90%;
+    min-height: 20vh;
+    background-color: white;
+    top: 0;
+    left: 5%;
+    box-shadow: 1px 2px 20px 2px rgb(230, 189, 100);
+    border-radius: 10px;
+    animation-name: up;
+    animation-duration: 2s;
+    text-align: center;
+    display: none;
+    position: absolute;
+  }
+  #questionpage #modal h2 {
+    padding-top: 10px;
+    color: rgb(201, 131, 3);
+  }
+  #questionpage #modal div {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  #questionpage #modal button {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 3px 12PX;
+    background-color: rgb(201, 131, 3);
+    border: none;
+    box-shadow: 1px 2px 20px 2px rgb(231, 195, 148);
+    border-radius: 4px;
+  }
+}
+@media (max-width: 590px) {
+  #printResult {
+    width: 80%;
+    min-height: 50vh;
+    background-color: white;
+    margin: 120px auto;
+    box-shadow: 1px 2px 20px 2px rgb(163, 161, 161);
+    border-radius: 10px;
+    animation-name: up;
+    animation-duration: 2s;
+    text-align: center;
+    display: none;
+  }
+  #printResult h2 {
+    padding-top: 25px;
+    color: rgb(201, 131, 3);
+    font-size: 30px;
+    animation-name: popDown;
+    animation-duration: 2s;
+    animation-delay: 2.3s;
+    animation-fill-mode: forwards;
+    font-weight: 1000;
+  }
+  #printResult #show1 {
+    padding-top: 23px;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+  }
+  #printResult button {
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+    padding: 6px 12PX;
+    background-color: rgb(201, 131, 3);
+    border: none;
+    box-shadow: 1px 2px 20px 2px rgb(231, 195, 148);
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+ 
+    <div id="questionpage">
+     <h1>Question <span id="count">1</span></h1>
+     <div class="border">
+    
+     </div>
+     <div id="border2">
+       <h3 id="ques">
+       
+       </h3>
+     </div>
+     <div id="border3">
+     <ul id="list1">
+
+     </ul>
+   
+    </div>
+    <div class="border4">
+         <button id="Previous" onclick="controls('Previous')">Previous</button>
+         <button id="next1" onclick="controls('next1')">Next</button>
+    </div>
+     <div class="border5">
+      <button id="sumbit" onclick="presubmit()">Submit</button>
+    </div>
+    <div id="timer"><span id="counter">60</span></div>
+    <div id="modal">
+      <h2>Are you sure you want to summit? <br> There is Unanswer Question</h2>
+      <div>
+        <button onclick="sure('yes')">Yes </button>
+      <button onclick="sure('no')">No</button>
+      </div>
+      
+</div>
+    </div>
+    <div id="startQuiz">
+      <img src="./image/F-O-G-1-17-2024.png" alt="">
+      <h4>Quiz Game</h4>
+      <h1 id="start" onclick="startG()">Start Quiz</h1>
+      <h3>click on start quiz</h3>
+    </div>
+      <div id="printResult">
+        <h2>Congratulation <br> You Scored</h2>
+         <h1 id="show1">0/7</h1>
+         <a href="./index.html"><button > Restart</button></a>
+      </div>
+   
+  
+</body>
+<script src="/index.js"></script>
+</html>
